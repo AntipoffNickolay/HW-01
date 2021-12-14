@@ -14,7 +14,8 @@ def game_v3(number:int = 1) -> int:
 
     count = 0   # счетчик попыток
     prdict_number_min = 1  # нижняя граница поиска числа
-    prdict_number_max = 100  # верхняя граница поиска числа
+    prdict_number_max = 101  # верхняя граница поиска числа
+    
     
     while True:
         count+=1
@@ -53,4 +54,7 @@ def score_game(game_v3) -> int:
     print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
     return(score)
 
-score_game(game_v3)
+
+if __name__ == '__main__':
+    #RUN
+    score_game(game_v3)
